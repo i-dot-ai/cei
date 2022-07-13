@@ -6,4 +6,4 @@ from . import models
 class EntitySerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Entity
-        fields = ['id', 'created_at']
+        fields = ["id", "created_at"]
