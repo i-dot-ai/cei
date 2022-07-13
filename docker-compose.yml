@@ -1,0 +1,30 @@
+version: '3'
+
+volumes:
+  local_postgres_data: {}
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: cei-api
+    depends_on:
+      - postgres
+    env_file:
+      - ./.envs/api
+      - ./.envs/postgres
+    volumes:
+      - ./:/app/:z
+    ports:
+      - "8000:8000"
+
+  postgres:
+    image: postgres:13
+    container_name: cei-postgres
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data:Z
+    env_file:
+      - ./.envs/postgres
+    ports:
+      - "5432:5432"
