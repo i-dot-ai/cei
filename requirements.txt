@@ -4,3 +4,4 @@ django-environ
 psycopg2
 watchdog[watchmedo]
 drf-spectacular
+waitress
