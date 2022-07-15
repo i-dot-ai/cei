@@ -1,0 +1,8 @@
+---
+applications:
+- name: cei-api
+  memory: 512M
+  buildpacks:
+  - python_buildpack
+  services:
+  - cei-postgres-demo
