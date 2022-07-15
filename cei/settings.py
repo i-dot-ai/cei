@@ -19,7 +19,7 @@ SECRET_KEY = "django-insecure-vgc$wc#u@o8(m7dmq1slsd-%m)9s%*4g8n8n2spmng6@9$l1-l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["cei-api-demo.london.cloudapps.digital",]
 
 
 # Application definition
