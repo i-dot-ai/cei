@@ -1,6 +1,6 @@
 ---
 applications:
-- name: cei-api
+- name: cei-api-demo
   memory: 512M
   buildpacks:
   - python_buildpack
