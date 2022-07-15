@@ -10,5 +10,8 @@ def now():
 
 
 class Entity(models.Model):
+    class Meta:
+        verbose_name_plural = "Entities"
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     created_at = models.DateTimeField(editable=False, default=now)
